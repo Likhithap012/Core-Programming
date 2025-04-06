@@ -1,0 +1,19 @@
+package com.gevernova.methods;
+
+import java.util.Scanner;
+
+public class MaximumNumberOfHandshakes {
+    public static int numberOfHandshakes(int n){
+        int ans=(n*(n+1))/2;
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // Create a Scanner object for input
+
+        // Taking n input from the user
+        int number = sc.nextInt();
+        int ans=numberOfHandshakes(number);
+        System.out.println(ans);
+    }
+}
